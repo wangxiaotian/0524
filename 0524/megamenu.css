@@ -72,9 +72,7 @@ body .section .wrapTag,body .section .innerTag{
 
 }
 /*-------事件绑定样式-----------*/
-.section1 ul{
-	display:        none;
-}
+
 .section div{
 	padding-left:   30px;
 }

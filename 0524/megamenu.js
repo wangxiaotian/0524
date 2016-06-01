@@ -76,6 +76,7 @@ window.onload = function () {
                   
             }) 
       })();
+      
       //添加mouseover事件显示折叠展开符号
       /*
       $('div span').mouseove(function () {
@@ -88,32 +89,36 @@ window.onload = function () {
             })
       })
       */
-      //添加同心圆事件
+      //从上往下添加
       $('.section1').find('.wrapTag').click(function () {
+            $('p.head').html();
+            $('p.head').html('<strong></strong>')
+            
             var text = $(this).parents('span').text().substr(1);
             
+            //隐藏要隐藏的，剩下的即是要显示的
+            $(this).parents('div').siblings('.sec1_div').hide(300);                     
+            $(this).parents('ul').siblings().hide(300);
+            $(this).parent().hide(300);
+            var $list = $(this).parents('ul').siblings();
             
-            $(this).parents('div').siblings('.sec1_div').hide(300);
-            $(this).parents('span').siblings('ul').show(300);          
-            $(this).parents('span').hide(300);
-            $('.title').text(text);
-            $('p.head strong').before('<span>' + text + '</span>' + ' > ');
-            $('.section1 .head span').click(function () {                  
-                  $('.section1 ul').each(function (index,element) { 
-                        b = $(element);                      
-                        var a = $(element).siblings('span');                        
-                        if(a.text().substr(1) === $(this).text()) {
-                              alert('1');
-                              return false;                             
-                        }    
-                  })
-                  
-            })
+            for(var i = 0; i < $list.length; i++) {
+
+              $('p.head strong').before('<span class = "up">' + $list.eq(i).text().substr(1) + '</span>' + ' > ');
+            }
             
-      
-            
+            $('.title').text(text);      
       })
-      //添加导航事件
+      //从下往上添加
+      $('p.head span.up').click(function () {    
+            alert('1');         
+            if($('p.head').text() !== '') {
+              alert("1");
+            } else {
+              return false;
+            }
+      })            
+      
 
 
       
