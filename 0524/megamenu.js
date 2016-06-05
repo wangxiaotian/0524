@@ -34,6 +34,7 @@ $(function(){
             if(o[i]['list']) {
                 forTree(o[i]['list']);    
             }
+
             str += '</ul>'
         }
         return str;
@@ -58,4 +59,4 @@ $(function(){
       $(this).addClass('sleSpan');
     })
 })
-      
+
