@@ -26,12 +26,10 @@
 	top:100px;
 	left:-40px;
 }
-	
-
 .sleLi{
 	position:absolute;
 	top:-60px;
-	left:50px;
+	left:40px;
 	height:0px;
 	font-size:1.6em;
 }
@@ -44,7 +42,7 @@
 }
 .slePsn{
 	position:relative;
-	top:-20px;
+	top:50px;
 	left:0;
 }
 p{

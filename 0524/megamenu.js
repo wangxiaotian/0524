@@ -44,7 +44,7 @@ $(function(){
     //操作DOM
     $('.section1').on('click','p',function(){
         $('.section1').find('*').removeClass();
-        $(this).parents('ul').eq(0).addClass('slePsn');
+        $(this).parents('ul').eq(0).addClass('');
         $(this).parents('ul').siblings('ul').addClass('none');
         $(this).parents('ul').siblings('li').addClass('sle');
         $(this).parents('ul').siblings('li').eq(0).addClass('sleNone');
