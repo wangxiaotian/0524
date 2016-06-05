@@ -1,86 +1,56 @@
-*{
-	margin:         0;
-	padding:        0;
-}
-body{
-	width:          1200px;
-	height:         100%;
-	margin:         50px auto;
-}
-ul li{
-	list-style:     none;
-    height:         30px;
-    line-height:    30px;
-}
-p.title{
-	padding:        10px 30px;
-	font-size:      2.0em;
-}
-p.head span{
-	color:          #666;
-	cursor:         pointer;
-}
-p.head span:hover{
-	text-decoration: underline;
-}
-body .section div .switch{
-	width:          10px;
-	display:        inline-block;
-	cursor:         pointer;
-}
-body .section .wrapTag,body .section .innerTag{
-	border-radius:  20px;
-	vertical-align: center;
-	cursor:         pointer;
-}
-.section .wrapTag{
-	display:        inline-block;
-	width:          20px;
-	height:         20px;
-	position:       relative;	
-	margin-right:   10px;
-}
-.section .wrapTag:hover{
-    background-color:#ccc;
-}
-.section .innerTag{
-	display:        block;
-	width:          6px;
-	height:         6px;
-	position:       absolute;
-	top:            7px;
-	left:           7px;
-    background-color:#666;
-}
 .section{
-	float:          left;
-	width:          40%;
-	border:         2px solid #ccc;
-	height:         500px;
-	margin-left:    2px;
+	width:500px;
+	height:600px;
+	margin:50px 50px;
+	position:relative;
+	border:1px solid #333;
+	padding-top:10px;
 }
-.section2,.section3{
-	width:          29%;
+.none{
+	display:none;
 }
-.head{
-	width:          100%;
-	height:         50px;
-	line-height:    50px;
-	border-bottom:  1px solid #eee;
+.sle{
+	float:left;
+	color:#aaa;
+	display:inline-block;
+	margin-right:5px;
 }
-.title{
+.sle p:before{
+	content:'>';
+}
+.sleNone p:before{
+	content:'';
+}
+.sleUl{
+	position:absolute;
+	top:100px;
+	left:-40px;
+}
+	
 
+.sleLi{
+	position:absolute;
+	top:-60px;
+	left:50px;
+	height:0px;
+	font-size:1.6em;
 }
-/*-------事件绑定样式-----------*/
-.section1 ul{
-	display:        none;
+.sleSpan{
+	position:absolute;
+	top:5px;
+	left:5px;
+	color:grey;
+	cursor:pointer;
 }
-.section div{
-	padding-left:   30px;
+.slePsn{
+	position:relative;
+	top:-20px;
+	left:0;
 }
-.section div span{
-	display:        inline-block;
-	width:          100%;
-	height:         25px;
-	line-height:    25px;
+p{
+	cursor:pointer;
+}
+li{
+	height:10px;
+	list-style:none;
 }
